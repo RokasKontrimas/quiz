@@ -55,7 +55,7 @@ if (level2) {
     }
 
     if (quizAnswers2 > 1) {
-        console.log('2 Lygis: i abu klausimus atsakei teisingai ir patekai i kita lygi!');
+        console.log(`2 Lygis: atsakei i ${quizAnswers2}/2 klausimus ir patekai i kita lygi!`);
     } else if (quizAnswers2 > 0 && question1Correct === false) {
         console.log(`2Lygis: nepatekai i kita lygi nes blogai atsakei i \'${question1}\' klausima`)
     } else if (quizAnswers2 > 0 && question2Correct === false) {
@@ -80,7 +80,7 @@ if (level3) {
         question3Correct = true;
     }
     if (quizAnswers3 > 2) {
-        console.log('3 Lygis: i abu klausimus atsakei teisingai ir patekai i kita lygi!');
+        console.log(`3 Lygis: atsakei i ${quizAnswers3}/3 klausimus teisingai ir patekai i kita lygi!`);
     } else if (quizAnswers3 > 0 && question1Correct === false) {
         console.log(`3 Lygis: nepatekai i kita lygi nes blogai atsakei i \'${question1}\' klausima`)
     } else if (quizAnswers3 > 0 && question2Correct === false) {

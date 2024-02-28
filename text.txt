@@ -22,12 +22,12 @@ PIRMAS LYGIS:
 2. Jeigu atsakomi du klausimai, turi būti parodoma, kuris klausimas buvo neatsakytas.
 3. Jeigu atsakomi mažiau nei du klausimai, tai turi parodyti, kuris klausimas buvo atsakytas.
 
-    patenkama i kita lygi:    1 1 1
+patenkama i kita lygi:    1 1 1 +
 patenkama i kita lygi:    1 1 0
 patenkama i kita lygi:    1 0 1
 patenkama i kita lygi:    0 1 1
 
-nepatenkama i kita lygi:  1 0 0
-nepatenkama i kita lygi:  0 1 0
-nepatenkama i kita lygi:  0 0 1
+nepatenkama i kita lygi:  1 0 0 +
+nepatenkama i kita lygi:  0 1 0 +
+nepatenkama i kita lygi:  0 0 1 +
 nepatenkama i kita lygi:  0 0 0

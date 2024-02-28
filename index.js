@@ -18,10 +18,10 @@ let question1Answer = "oranzine";
 let question2Answer = "taip";
 let question3Answer = "nezinau";
 
-// Pirmas lygis
-let userAnswer1 = "osranzine";
+let userAnswer1 = "oranzine";
 let userAnswer2 = "taip";
 let userAnswer3 = "nezinau";
+// Pirmas lygis
 if (level1) {
     if (question1 && question1Answer === userAnswer1) {
         console.log(++quizAnswers1);
@@ -31,10 +31,6 @@ if (level1) {
         console.log(++quizAnswers1);
         question2Correct = true;
 
-    }
-    if (question3 && question3Answer === userAnswer3) {
-        console.log(++quizAnswers1);
-        question3Correct = true;
     }
     if (quizAnswers1 > 1) {
         console.log('1 Lygis: i abu klausimus atsakei teisingai ir patekai i kita lygi!');
@@ -46,6 +42,7 @@ if (level1) {
         console.log('1 Lygis: abu atsakymus pateikei klaidingus ir nepatekai i kita lygi..');
     }
 }
+// Antras lygis
 if (level2) {
     if (question1 && question1Answer === userAnswer1) {
         console.log(++quizAnswers2);
@@ -56,10 +53,7 @@ if (level2) {
         question2Correct = true;
 
     }
-    if (question3 && question3Answer === userAnswer3) {
-        console.log(++quizAnswers2);
-        question3Correct = true;
-    }
+
     if (quizAnswers2 > 1) {
         console.log('2 Lygis: i abu klausimus atsakei teisingai ir patekai i kita lygi!');
     } else if (quizAnswers2 > 0 && question1Correct === false) {
@@ -70,6 +64,7 @@ if (level2) {
         console.log('2 Lygis: abu atsakymus pateikei klaidingus ir nepatekai i kita lygi..');
     }
 }
+// Trecias lygis
 if (level3) {
     if (question1 && question1Answer === userAnswer1) {
         console.log(++quizAnswers3);

@@ -1,28 +1,42 @@
 let userName = 'Rokas';
-let isLoggedIn = false;
+let isLoggedIn = true;
+
+let currentDate = new Date();
 let currentTime = new Date();
+
+currentTime = currentTime.getHours()
 let userBirthday = new Date('2024-02-28');
+
 let morning = new Date();
 morning.setHours(5);
+morning = morning.getHours()
+
 let afternoon = new Date();
 afternoon.setHours(13);
+afternoon = afternoon.getHours()
+
 let evening = new Date();
 evening.setHours(19);
-let currentDayZone = '';
+evening.getHours()
 
-if (currentTime.getHours() >= morning.getHours() && currentTime.getHours() < afternoon.getHours()) {
-    currentDayZone = 'Good Morning';
-} else if (currentTime.getHours() >= afternoon.getHours() && currentTime.getHours() < evening.getHours()) {
-    currentDayZone = 'Good Afternoon';
+if (currentTime < 0 || currentTime > 24) {
+    console.error('Invalid time: Time must be between 0 and 24.');
 } else {
-    currentDayZone = 'Good Evening';
-}
-if (isLoggedIn) {
-    if (currentTime.getMonth() === userBirthday.getMonth() && currentTime.getDate() === userBirthday.getDate()) {
-        console.log(`${currentDayZone}, ${userName}, and have a great birthday!`);
+    let currentDayZone;
+    if (currentTime >= morning && currentTime < afternoon) {
+        currentDayZone = 'Good Morning';
+    } else if (currentTime >= afternoon && currentTime < evening) {
+        currentDayZone = 'Good Afternoon';
     } else {
-        console.log(`${currentDayZone}, ${userName}.`);
+        currentDayZone = 'Good Evening';
     }
-} else {
-    console.log(`${currentDayZone}`);
+    if (isLoggedIn) {
+        if (currentDate.getMonth() === userBirthday.getMonth() && currentDate.getDay() === userBirthday.getDay()) {
+            console.log(`${currentDayZone}, ${userName}, and have a great birthday!`);
+        } else {
+            console.log(`${currentDayZone}, ${userName}.`);
+        }
+    } else {
+        console.log(`${currentDayZone}`);
+    }
 }

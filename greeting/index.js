@@ -17,7 +17,7 @@ afternoon = afternoon.getHours()
 
 let evening = new Date();
 evening.setHours(19);
-evening.getHours()
+evening = evening.getHours()
 
 if (currentTime < 0 || currentTime > 24) {
     console.error('Invalid time: Time must be between 0 and 24.');

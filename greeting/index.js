@@ -37,6 +37,6 @@ if (currentTime < 0 || currentTime > 24) {
             console.log(`${currentDayZone}, ${userName}.`);
         }
     } else {
-        console.log(`${currentDayZone}`);
+        console.log(currentDayZone);
     }
 }
